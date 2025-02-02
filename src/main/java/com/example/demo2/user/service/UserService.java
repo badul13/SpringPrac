@@ -56,13 +56,9 @@ public class UserService {
     //dirty checking? 이것도 해볼라했는데 좀 지금쓰기 애매한 것 같아 보여서 일단 그냥 이렇게 했음
 
     public List<UserDTO> getAllUsers() {
-        try {
-            return userRepository.findAll().stream()
-                    .map(UserDTO::new)
-                    .collect(Collectors.toList());
-        } catch (Exception e) {
-            throw new GeneralException(Code.INTERNAL_ERROR);
-        }
+        return userRepository.findAll().stream()
+                .map(UserDTO::new)
+                .collect(Collectors.toList());
     }
     //일단 이렇게 했는데 INTERNAL_ERROR 같은 건 이렇게 하나하나 다 해줘야하는건가 잘 모르겠음
     //이미 예외처리 있으면 꼬이는 것도 있고 이것도 찾아봐야함
