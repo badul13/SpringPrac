@@ -5,7 +5,9 @@
 
 3. srp 찾아보기
 
-4. 
+4. 구조 수정하기 (controller끼리, srvice끼리)
+
+5. 
 crud 한 덩어리 만들어서
 restful api post 사용하는거 적용하고
 errorresponse 사용하게끔 해서
