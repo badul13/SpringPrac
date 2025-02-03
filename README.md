@@ -2,6 +2,7 @@
    에러리스폰스 모든 곳에 아직 적용 다 못 함 > 찾아서 수정해야함
    ex. 주소 이상할 경우 등
 + errorresponse 세분화
++ 새로찾은거 : MethodArgumentNotValidException? 그냥 @valid로 넘겨서 검증하는거 핸들러로 못 가져오겠음 이것도 찾아봄..
 
 2. srp 찾아보기
 
