@@ -1,12 +1,12 @@
-package com.example.demo2.book.service;
+package com.example.demo2.service;
 
 import com.example.demo2.base.GeneralException;
 import com.example.demo2.base.constant.Code;
-import com.example.demo2.book.dto.BookDTO;
-import com.example.demo2.book.entity.Book;
-import com.example.demo2.book.repository.BookRepository;
-import com.example.demo2.user.entity.User;
-import com.example.demo2.user.repository.UserRepository;
+import com.example.demo2.DTO.BookDTO;
+import com.example.demo2.entity.Book;
+import com.example.demo2.repository.BookRepository;
+import com.example.demo2.entity.User;
+import com.example.demo2.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

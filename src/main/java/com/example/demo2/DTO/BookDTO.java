@@ -1,6 +1,6 @@
-package com.example.demo2.book.dto;
+package com.example.demo2.DTO;
 
-import com.example.demo2.book.entity.Book;
+import com.example.demo2.entity.Book;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

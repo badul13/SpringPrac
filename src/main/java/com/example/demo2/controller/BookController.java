@@ -1,11 +1,11 @@
-package com.example.demo2.book.controller;
+package com.example.demo2.controller;
 
 import com.example.demo2.base.constant.Code;
 import com.example.demo2.base.dto.DataResponseDTO;
 import com.example.demo2.base.dto.ResponseDTO;
-import com.example.demo2.book.dto.BookDTO;
-import com.example.demo2.book.dto.BookIDRequestDTO;
-import com.example.demo2.book.service.BookService;
+import com.example.demo2.DTO.BookDTO;
+import com.example.demo2.DTO.BookIDRequestDTO;
+import com.example.demo2.service.BookService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

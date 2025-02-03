@@ -1,11 +1,11 @@
-package com.example.demo2.user.controller;
+package com.example.demo2.controller;
 
 import com.example.demo2.base.constant.Code;
 import com.example.demo2.base.dto.DataResponseDTO;
 import com.example.demo2.base.dto.ResponseDTO;
-import com.example.demo2.user.dto.UserDTO;
-import com.example.demo2.user.dto.UserIDRequestDTO;
-import com.example.demo2.user.service.UserService;
+import com.example.demo2.DTO.UserDTO;
+import com.example.demo2.DTO.UserIDRequestDTO;
+import com.example.demo2.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

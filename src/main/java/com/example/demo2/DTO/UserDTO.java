@@ -1,7 +1,6 @@
-package com.example.demo2.user.dto;
+package com.example.demo2.DTO;
 
-import com.example.demo2.book.dto.BookDTO;
-import com.example.demo2.user.entity.User;
+import com.example.demo2.entity.User;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
