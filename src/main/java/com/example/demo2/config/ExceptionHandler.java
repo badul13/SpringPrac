@@ -3,6 +3,7 @@ package com.example.demo2.config;
 import com.example.demo2.base.GeneralException;
 import com.example.demo2.base.constant.Code;
 import com.example.demo2.base.dto.ErrorResponseDTO;
+import jakarta.validation.ConstraintViolationException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,8 +15,13 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @RestControllerAdvice(annotations = {RestController.class})
 public class ExceptionHandler extends ResponseEntityExceptionHandler {
 
+    @org.springframework.web.bind.annotation.ExceptionHandler
+    public ResponseEntity<Object> validation(ConstraintViolationException e, WebRequest request) {
+        return handleExceptionInternal(e, Code.VALIDATION_ERROR, request);
+    }
+
 //    @org.springframework.web.bind.annotation.ExceptionHandler
-//    public ResponseEntity<Object> validation(ConstraintViolationException e, WebRequest request) {
+//    public ResponseEntity<Object> handleValidationException(MethodArgumentNotValidException e, WebRequest request) {
 //        return handleExceptionInternal(e, Code.VALIDATION_ERROR, request);
 //    }
 
@@ -52,4 +58,6 @@ public class ExceptionHandler extends ResponseEntityExceptionHandler {
                 request
         );
     }
+
+
 }
