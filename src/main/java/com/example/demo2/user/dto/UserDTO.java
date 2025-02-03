@@ -3,7 +3,7 @@ package com.example.demo2.user.dto;
 import com.example.demo2.book.dto.BookDTO;
 import com.example.demo2.user.entity.User;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,9 +15,9 @@ import java.util.stream.Collectors;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserDTO {
-    @NotNull(message = "이름은 필수 작성 사항입니다.")
+    @NotBlank(message = "이름은 필수 작성 사항입니다.")
     private String name;
-    @NotNull(message = "이메일은 필수 작성 사항입니다.")
+    @NotBlank(message = "이메일은 필수 작성 사항입니다.")
     @Email(message = "이메일 양식에 맞지 않습니다.")
     private String email;
     private List<BookDTO> books;
